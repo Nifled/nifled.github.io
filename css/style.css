@@ -7,6 +7,8 @@ https://www.behance.net/gallery/23898501/HIPSTER-FREE-FONT-BELLABOO
 body {
     padding: 0px;
     margin: 0px;
+
+    overflow-x: hidden;
 }
 
 .section-heading {
