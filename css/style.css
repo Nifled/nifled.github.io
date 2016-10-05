@@ -539,25 +539,38 @@ blockquote {
     padding: 0.3em 130px;
     line-height: 1.3;
     position: relative;
-    font-size: 2vw;
-}
-
-blockquote:before {
-    display: block;
-    content: "\201C";
-    font-size: 10vw;
-    position: absolute;
-    left: 0;
-    top: 0;
+    font-size: 2em;
 }
 
 blockquote cite {
     color: white;
-    font-size: 1.5vw;
+    font-size: 0.6em;
+}
+
+.fa-quote-left {
+    margin-left: -25px;
+}
+
+.fa-quote-right {
+    margin-right: -25px;
 }
 
 blockquote cite:before {
     content: "\2014 \2009";
+}
+
+@media only screen and (max-width: 575px) {
+  blockquote {
+      margin: 0 auto;
+      padding: 20px !important;
+      line-height: 1.2;
+      position: relative;
+      font-size: 2em;
+  }
+
+  blockquote cite {
+      font-size: 0.5em;
+  }
 }
 
 footer {
