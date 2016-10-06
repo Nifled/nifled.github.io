@@ -533,6 +533,7 @@ p.tabby {
 }
 
 blockquote {
+  width: 80%;
     font-family: 'Droid Serif', serif;
     border: none;
     color: white;
@@ -559,8 +560,9 @@ blockquote cite:before {
     content: "\2014 \2009";
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 650px) {
   blockquote {
+    width: 90%;
       margin: 0 auto;
       padding: 20px !important;
       line-height: 1.2;
