@@ -35,6 +35,7 @@ body {
 .nav li {
     display: inline;
     color: white;
+    text-align: center !important;
     transition: 1s ease;
 }
 
@@ -71,13 +72,23 @@ body {
 }
 
 .nav-sec {
-    transition: all ease 0.8s;
+    transition: all ease 0.9s;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-sec {
+      transition: all ease 0.9s;
+  }
+
+  .nav-sec:hover {
+    box-shadow: inset 100vw 0 0 0 #E0E0E0 !important;
+  }
 }
 
 .nav-sec:hover {
     text-shadow: none !important;
     color: black !important;
-    box-shadow: inset 200px 0 0 0 #E0E0E0;
+    box-shadow: inset 150px 0 0 0 #E0E0E0;
     color: #fff;
 }
 
