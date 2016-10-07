@@ -471,7 +471,7 @@ p.tabby {
 }
 
 .container.inform {
-    width: 50%;
+    width: 40%;
 }
 
 .form-group {
@@ -483,9 +483,8 @@ p.tabby {
 }
 
 .form-control:focus {
-    border: 2px solid;
+    box-shadow: inset 0 0 5px #64FFDA;
     border-color: #1DE9B6;
-    box-shadow: none;
 }
 
 .form-group input, .form-group textarea {
@@ -512,11 +511,30 @@ p.tabby {
 }
 
 .submit-btn button:hover {
-    background-color: #64FFDA/*#64FFDA*/
-    ;
+    background-color: #64FFDA/*#64FFDA*/;
     transition: 1s background-color;
     color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  .container.inform {
+      width: 60%;
+    }
+    .submit-btn button {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .container.inform {
+      width: 80%;
+    }
+    .submit-btn button {
+        width: 150px;
+    }
+}
+
+
 
 .quote {
     height: 400px;
