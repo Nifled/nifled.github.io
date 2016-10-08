@@ -169,6 +169,68 @@ video {
     color: white;
 }
 
+@media only screen and (max-width: 992px) {
+  #header span {
+    font-size: 3em !important;
+  }
+
+  #sub-head span {
+    font-size: 1.3em !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #header span {
+    font-size: 2.6em !important;
+  }
+
+  #sub-head span {
+    font-size: 1.4em !important;
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .erickHead {
+    margin-bottom: 20px !important;
+  }
+  #header span {
+    font-size: 2.4em !important;
+  }
+
+  #sub-head span {
+    font-size: 1.2em !important;
+    width: 58% !important;
+  }
+
+  .hire-btn button {
+    font-size: 105% !important;
+    width: 175px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #header span {
+    font-size: 2em !important;
+  }
+
+  #sub-head span {
+    font-size: 1em !important;
+    width: 65% !important;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  #header span {
+    font-size: 1.8em !important;
+  }
+
+  #sub-head span {
+    font-size: 1em !important;
+    width: 70% !important;
+  }
+}
+
 #sub-head span {
     margin: 0 auto;
     width: 45%;
