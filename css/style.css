@@ -45,7 +45,11 @@ body {
     font-family: 'Gochi Hand', cursive;
     font-size: 3em;
     font-weight: 300;
-    margin: 5px;
+}
+
+.navbar-brand img {
+  width: 50px;
+  margin-top: -10px;
 }
 
 .brand {
@@ -93,7 +97,13 @@ body {
 }
 
 .booty {
-    background-color: #64FFDA;
+    background-color: transparent;
+}
+.booty:hover {
+  background-color: transparent !important;
+}
+.booty:active {
+  background-color: transparent !important;
 }
 
 #toggle {
@@ -115,9 +125,10 @@ body {
 .hamburger div {
     position: relative;
     width: 2em;
-    height: 3.5px;
-    background-color: black;
-    margin-top: 8px;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 7px;
     transition: all 0.3s ease-in-out;
 }
 
