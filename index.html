@@ -52,7 +52,7 @@
 
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
-                  <img src="img/logos/smooth_black.png" alt="" />
+                  <img class="hvr-wobble-to-bottom-right" src="img/logos/smooth_black.png" alt="" />
                 </a>
 
 
@@ -72,10 +72,10 @@
             <!-- For mobile -->
             <div class="collapse navbar-collapse" id="navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="nav-sec" href="#">Home</a></li>
-                    <li><a class="nav-sec" href="#">About</a></li>
-                    <li><a class="nav-sec" href="#">Projects</a></li>
-                    <li><a class="nav-sec" href="#">Contact</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center" href="#">Home</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center" href="#">About</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center" href="#">Projects</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center" href="#">Contact</a></li>
                 </ul>
             </div>
 
@@ -409,12 +409,41 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js'></script>
 
     <script>
+
     $('.booty').click(function() {
       $('input[type=checkbox]').trigger('click');
     });
     $('.hamburger').click(function() {
       $('input[type=checkbox]').trigger('click');
     });
+
+
+
+    var $nav = $('.navbar');
+    var $navHead = $('.navbar-default');
+    var $logo = $('.navbar-brand img')
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > $(window).height() - $logo.height()) {
+        $nav.addClass('show');
+        $navHead.addClass('show');
+        $logo.addClass('smallLogo');
+        $logo.addClass('animated');
+        $logo.addClass('rubberBand');
+        $logo.removeClass('hvr-wobble-to-bottom-right');
+        // $logo.addClass('hvr-push');  IN DEBATE!
+    } else {
+        $nav.removeClass('show');
+        $navHead.removeClass('show');
+        $logo.removeClass('smallLogo');
+        $logo.removeClass('animated');
+        $logo.removeClass('rubberBand');
+        $logo.addClass('hvr-wobble-to-bottom-right');
+    }
+    });on("resize", function(){ // If the user resizes the window
+     $(window).height() = $(this).height(); // the new height value
+   });
+
+
     </script>
 
 
