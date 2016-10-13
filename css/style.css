@@ -391,7 +391,7 @@ hr {
     padding-bottom: 150px;
     padding-right: 30px;
     padding-left: 30px;
-    background: #f9f9f9;
+    background: white;
 }
 
 .tool-item {
@@ -412,7 +412,7 @@ hr {
 
 .aboutme {
     padding-bottom: 150px;
-    background-color: white;
+    background-color: rgba(250, 255, 251, 1);
 }
 
 .aboutme-content {
@@ -440,13 +440,11 @@ hr {
     filter: gray;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
-    transition: 0.7s ease;
+    transition: all 0.7s ease;
 }
 
-.aboutme-img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
-    transition: 0.7s ease;
+.colorize {
+  filter: none !important;
 }
 
 .aboutme-text {
@@ -483,7 +481,7 @@ p.tabby {
 }
 
 .portfolio {
-    background: #f9f9f9;
+    background: rgba(250, 255, 251, 1);
 }
 
 .portfolio-heading {
