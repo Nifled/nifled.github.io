@@ -412,7 +412,7 @@ hr {
 
 .aboutme {
     padding-bottom: 150px;
-    background-color: rgba(250, 255, 251, 1);
+    background-color: rgba(245, 255, 245, 1);
 }
 
 .aboutme-content {
@@ -481,7 +481,7 @@ p.tabby {
 }
 
 .portfolio {
-    background: rgba(250, 255, 251, 1);
+    background: rgba(245, 255, 245, 1);
 }
 
 .portfolio-heading {
@@ -543,7 +543,7 @@ p.tabby {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -672,34 +672,25 @@ blockquote cite:before {
 }
 
 footer {
-    padding: 10px 0;
-    background-color: white;
+    margin: -150px;
+    height: 150px;
+    /*padding: 10px 0;*/
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer .row {
+    margin-top: 37px !important;
 }
 
 .social {
-    color: black;
-    font-size: 50px;
+    color: white;
+    font-size: 40px;
     padding: 15px;
-    margin-left: 10px;
     transition: .5s ease;
 }
 
-.go-up {
-    color: black;
-    font-size: 50px;
-    padding: 15px;
-}
-
-.go-up:hover {
-    color: black !important;
-}
-
 footer .social:hover {
-    color: rgba(0, 230, 118, 1) /*to be determined*/
-    ;
-    -webkit-box-shadow: 2px 0px 5px -2px #888;
-    -webkit-transform: translateX(-0.5px);
-    transform: translateX(-0.5px);
+    color: rgba(0, 230, 118, 1);
     transition: 0.3s ease;
 }
 
@@ -707,10 +698,18 @@ footer .social:hover {
 /*APPROACH 1 to centering footnote*/
 
 footer span {
-    line-height: 71px;
+    /*line-height: 71px;*/
+    color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 0.8em;
     font-weight: 500;
+}
+
+footer span a {
+    color: inherit;
+}
+footer span a:hover {
+    color: inherit;
 }
 
 
