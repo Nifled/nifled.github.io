@@ -1,8 +1,9 @@
-/* The font i couldnt import
-https://www.behance.net/gallery/25541553/Ailerons-Typeface
+@font-face {
+  font-family: 'Delicious-Bold';
+  src: url('../fonts/Delicious-Bold.otf') format('opentype');
+  /*    This could also be Reef, but i like delicous more :c    */
+}
 
-https://www.behance.net/gallery/23898501/HIPSTER-FREE-FONT-BELLABOO
-*/
 
 body {
     padding: 0px;
@@ -170,8 +171,8 @@ video {
 #header span {
     display: inline-block;
     margin-top: 0;
-    font-family: 'Gochi Hand', cursive;
-    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Delicious-Bold';
+    /*font-family: 'Gochi Hand', cursive;*/
     font-size: 3.3em;
     color: white;
 }
@@ -271,31 +272,36 @@ video {
     color: rgba(0, 230, 118, 1);
 }
 
-.animate-e {
+.animate-ee {
+    color: rgba(0, 230, 118, 1) !important;
     animation-delay: 0.2s;
     -moz-animation-delay: 0.2s;
     -webkit-animation-delay: 0.2s;
 }
 
-.animate-r {
+.animate-rr {
+    color: rgba(0, 230, 118, 1) !important;
     animation-delay: 0.8s;
     -moz-animation-delay: 0.8s;
     -webkit-animation-delay: 0.8s;
 }
 
-.animate-i {
+.animate-ii {
+    color: rgba(0, 230, 118, 1) !important;
     animation-delay: 0.6s;
     -moz-animation-delay: 0.6s;
     -webkit-animation-delay: 0.6s;
 }
 
-.animate-c {
+.animate-cc {
+    color: rgba(0, 230, 118, 1) !important;
     animation-delay: 1s;
     -moz-animation-delay: 1s;
     -webkit-animation-delay: 1s;
 }
 
-.animate-k {
+.animate-kk {
+    color: rgba(0, 230, 118, 1) !important;
     animation-delay: 0.4s;
     -moz-animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
