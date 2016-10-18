@@ -12,6 +12,37 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff;
+    z-index:100000000;
+}
+
+#status {
+    width:400px;
+    height:400px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    background-image:url(../img/banana.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-200px 0 0 -200px; /* is width and height divided by two */
+}
+
+
+
+
 .section-heading {
     font-family: 'Days One', sans-serif;
     font-size: 5vh;
