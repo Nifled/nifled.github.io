@@ -242,27 +242,27 @@
                             <!--Start div portfolio-grid-->
                             <div class="container portfolio-grid">
 
-                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInRight">
+                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInLeft">
                                     <img src="img/placeholder1.jpg" class="img-responsive" alt="">
                                 </div>
 
-                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInRight">
+                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInLeft">
                                     <img src="img/placeholder2.jpg" class="img-responsive" alt="">
                                 </div>
 
-                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInRight">
+                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInLeft">
                                     <img src="img/placeholder3.jpg" class="img-responsive" alt="">
                                 </div>
 
-                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInRight">
+                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInLeft">
                                     <img src="img/placeholder4.jpg" class="img-responsive" alt="">
                                 </div>
 
-                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInRight">
+                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInLeft">
                                     <img src="img/placeholder5.jpg" class="img-responsive" alt="">
                                 </div>
 
-                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInRight">
+                                <div class="col-md-4 col-sm-6 col-xs-8 portfolio-item wow slideInLeft">
                                     <img src="img/placeholder6.jpg" class="img-responsive" alt="">
                                 </div>
 
@@ -397,6 +397,19 @@
     <script src='js/bootstrap.min.js'></script>
 
     <script>
+
+      if ($(window).width() <= 768) {
+        var videoElement = document.getElementById('wrapper');
+        videoElement.pause();
+        videoElement.src =""; // empty source
+        videoElement.load();
+      } else {
+        var videoElement = document.getElementById('wrapper');
+        videoElement.pause();
+        videoElement.src ="vids/header.mp4";
+        videoElement.load();
+      }
+
         $('.booty').click(function() {
             $('input[type=checkbox]').trigger('click');
         });
@@ -436,8 +449,7 @@
             }
 
 
-        });
-        on("resize", function() { // If the user resizes the window
+        });on("resize", function() { // If the user resizes the window
             $(window).height() = $(this).height(); // the new height value
         });
     </script>
