@@ -29,16 +29,16 @@ body {
 }
 
 #status {
-    width:300px;
-    height:300px;
+    width:150px;
+    height:150px;
     position:absolute;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
 }
 @media only screen and (max-width: 768px) {
   #status {
-    width:150px;
-    height:150px;
+    width:75px;
+    height:75px;
   }
 }
 
