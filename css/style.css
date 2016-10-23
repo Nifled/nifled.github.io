@@ -622,12 +622,20 @@ p.tabby {
     font-size: 20px;
     font-weight: bold;
     transition: 1s ease;
+
+    margin-bottom: 30px;
 }
 
 .submit-btn button:hover {
     background-color: rgba(0, 230, 118, 1) /*#64FFDA*/;
     transition: 1s background-color;
     color: white;
+}
+
+@media screen and (max-width: 995px) , screen and (max-height: 700px) {
+  .submit-btn button {
+      margin-bottom: 70px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
