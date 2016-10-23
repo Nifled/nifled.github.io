@@ -427,9 +427,24 @@ hr {
 
 .tools {
     padding-bottom: 150px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 150px;
+    padding-left: 150px;
     background: white;
+}
+@media only screen and (max-width: 768px) {
+    .tools {
+      padding-right: 40px !important;
+      padding-left: 40px !important;
+    }
+}
+@media only screen and (max-width : 480px) {
+  .tools-heading {
+      margin-top: 70px;
+      margin-bottom: 50px;
+  }
+  .tools {
+    padding-bottom: 70px;
+  }
 }
 
 .tool-item {
@@ -440,7 +455,7 @@ hr {
 
 .img {
     margin-top: 50px;
-    width: 65%;
+    width: 200px;
 }
 
 .aboutme-heading {
@@ -451,6 +466,15 @@ hr {
 .aboutme {
     padding-bottom: 150px;
     background-color: rgba(245, 255, 245, 1);
+}
+@media only screen and (max-width : 480px) {
+  .aboutme-heading {
+      margin-top: 70px;
+      margin-bottom: 50px;
+  }
+  .aboutme {
+      padding-bottom: 70px;
+  }
 }
 
 .aboutme-content {
@@ -529,6 +553,15 @@ p.tabby {
 
 .portfolio-grid {
     padding-bottom: 150px;
+}
+@media only screen and (max-width : 480px) {
+  .portfolio-heading {
+      margin-top: 70px;
+      margin-bottom: 50px;
+  }
+  .portfolio-grid {
+      padding-bottom: 100px;
+  }
 }
 
 .portfolio-item {
