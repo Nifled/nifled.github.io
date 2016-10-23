@@ -49,12 +49,43 @@
 
             // $("#banner").hide().fadeIn('fast');
         })
+
+        $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // For mobile
+      if($(window).innerWidth() <= 765) {
+              $('input[type=checkbox]').trigger('click');
+        }
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
     </script>
 
 </head>
 
 
 <body>
+  <div class="anchor" id="home-section"></div>
     <!-- Preloader -->
     <div id="preloader">
         <img class="animated bounce infinite" id="status" src="img/logos/smooth_green.png" alt="" />&nbsp;
@@ -81,7 +112,7 @@
         <div class="container">
 
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#home-section">
                     <img class="hvr-wobble-to-bottom-right" src="img/logos/smooth_green.png" alt="" />
                 </a>
 
@@ -102,10 +133,10 @@
             <!-- For mobile -->
             <div class="collapse navbar-collapse" id="navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="nav-sec hvr-underline-from-center" href="#">Home</a></li>
-                    <li><a class="nav-sec hvr-underline-from-center" href="#">About</a></li>
-                    <li><a class="nav-sec hvr-underline-from-center" href="#">Projects</a></li>
-                    <li><a class="nav-sec hvr-underline-from-center" href="#">Contact</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center" href="#home-section">Home</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center" href="#about-section">About</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center" href="#portfolio-section">Projects</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center" href="#contact-section">Contact</a></li>
                 </ul>
             </div>
 
@@ -157,7 +188,9 @@
 
 
                 <div class="col-lg-12 text-center hire-btn">
-                    <button type="submit" class="btn btn-xl animate-btn">Hire Me!</button>
+                  <a href="#contact-section">
+                      <button type="submit" class="btn btn-xl animate-btn">Hire Me!</button>
+                  </a>
                 </div>
 
 
@@ -171,7 +204,7 @@
 
 
                   <!--Start div aboutme-->
-                  <div class="anchor" id="aboutme"></div>
+                  <div class="anchor" id="about-section"></div>
                   <div class="container-fluid aboutme">
 
                       <!--Heading-->
@@ -201,7 +234,7 @@
 
 
                     <!--Start div tools-->
-                    <div class="anchor" id="tools"></div>
+                    <div class="anchor" id="tools-section"></div>
                     <div class="container-fluid text-center tools">
 
                         <!--Start div tools-grid-->
@@ -276,6 +309,7 @@
                     <!--End div quote-->
 
 
+                    <div class="anchor" id="portfolio-section"></div>
                     <!--Start div portfolio-->
                     <div class="container-fluid portfolio">
 
@@ -324,6 +358,7 @@
                     </div>
                     <!--End div porfolio-->
 
+                    <div class="anchor" id="contact-section"></div>
                     <!--Start div contact-->
                     <div class="contact">
 
@@ -410,10 +445,11 @@
                               <!--Social Icons-->
                               <div class="col-md-12">
 
-                                  <a class="social social-gh" href="#" target="_blank"><i class="fa fa-github"></i></a>
-                                  <a class="social social-fb" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                  <a class="social social-cp" href="#" target="_blank"><i class="fa fa-codepen"></i></a>
-                                  <a class="social social-fb" href="#" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                                  <a class="social social-gh" href="https://github.com/Nifled" target="_blank"><i class="fa fa-github"></i></a>
+                                  <a class="social social-fb" href="https://mx.linkedin.com/in/erick-delfin-548498114
+" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                  <a class="social social-cp" href="http://codepen.io/Nifled/" target="_blank"><i class="fa fa-codepen"></i></a>
+                                  <a class="social social-fb" href="https://www.facebook.com/erickdelfinmolina" target="_blank"><i class="fa fa-facebook-square"></i></a>
 
                               </div>
 
