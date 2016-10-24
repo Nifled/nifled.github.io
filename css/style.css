@@ -191,7 +191,7 @@ video {
     width: auto;
     height: auto;
     transform: translateX(-50%) translateY(-50%);
-    background: url(http://i66.tinypic.com/rrk07r.jpg) no-repeat;
+    background: url('../img/desk1.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
@@ -606,7 +606,7 @@ p.tabby {
 .contact {
     /*     height: 50vh; */
     /* alternative background image: http://i67.tinypic.com/2yn588x.jpg http://i68.tinypic.com/33z8sqc.jpg */
-    background-image: url(http://i67.tinypic.com/2yn588x.jpg);
+    background-image: url('../img/desk2.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -724,7 +724,7 @@ p.tabby {
     height: 400px;
     overflow: hidden;
     /* Parallax */
-    background-image: url(http://i64.tinypic.com/1zyy9vr.jpg);
+    background-image: url('../img/quote.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
