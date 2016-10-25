@@ -298,89 +298,54 @@ video {
     -moz-animation-delay: 1.8s;
     -webkit-animation-delay: 1.8s;
 }
-
 .hire-btn button:hover {
     background-color: rgba(255,255,255,0.5);
     color: rgba(0, 230, 118, 1);
 }
-
 .animate-ee {
     color: rgba(0, 230, 118, 1) !important;
     animation-delay: 0.5s;
     -moz-animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
 }
-
 .animate-rr {
     color: rgba(0, 230, 118, 1) !important;
     animation-delay: 1.1s;
     -moz-animation-delay: 1.1s;
     -webkit-animation-delay: 1.1s;
 }
-
 .animate-ii {
     color: rgba(0, 230, 118, 1) !important;
     animation-delay: 0.9s;
     -moz-animation-delay: 0.9s;
     -webkit-animation-delay: 0.9s;
 }
-
 .animate-cc {
     color: rgba(0, 230, 118, 1) !important;
     animation-delay: 1.3s;
     -moz-animation-delay: 1.3s;
     -webkit-animation-delay: 1.3s;
 }
-
 .animate-kk {
     color: rgba(0, 230, 118, 1) !important;
     animation-delay: 0.7s;
     -moz-animation-delay: 0.7s;
     -webkit-animation-delay: 0.7s;
 }
-
 .animate-sub {
     animation-delay: 1.8s;
     -moz-animation-delay: 1.8s;
     -webkit-animation-delay: 1.8s;
 }
-
-
-/*h1.head {
-  margin-top: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 7vw;
-  color: white;
-}*/
-
-
-/* D1E9EA */
-
-
-/* h4.sub {
-  width: 60%;
-  line-height: 1.3;
-  font-family: 'Delius', cursive;
-  font-weight: bold;
-  font-size: 1.3em;
-  color: #F3FBF1;
-} */
-
 #banner {
     width: 100%;
     height: 100vh;
-    /*background-image: url(http://i66.tinypic.com/rrk07r.jpg);
-  background-size: cover;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
-    /*text-align: center;
-
-  overflow: hidden;*/
 }
-
 .banner-image {
     width: 250px;
     border-color: white;
@@ -389,7 +354,6 @@ video {
     border-style: solid;
     margin-bottom: 20px;
 }
-
 hr {
     margin-top: -5px;
     margin-bottom: 19px;
@@ -569,7 +533,7 @@ p.tabby {
     margin: 0px 0 20px 0px;
     opacity: 0.6;
     transition: all 0.6s ease;
-
+    cursor: pointer;
     animation-delay: 0.1s;
     -moz-animation-delay: 0.1s;
     -webkit-animation-delay: 0.1s;
@@ -604,8 +568,6 @@ p.tabby {
 }
 
 .contact {
-    /*     height: 50vh; */
-    /* alternative background image: http://i67.tinypic.com/2yn588x.jpg http://i68.tinypic.com/33z8sqc.jpg */
     background-image: url('../img/desk2.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -819,12 +781,7 @@ footer .social:hover {
     color: rgba(0, 230, 118, 1);
     transition: 0.3s ease;
 }
-
-
-/*APPROACH 1 to centering footnote*/
-
 footer span {
-    /*line-height: 71px;*/
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
@@ -837,27 +794,6 @@ footer span a {
 footer span a:hover {
     color: inherit;
 }
-
-
-/*APPROACH 2 to centering footnote*/
-
-
-/*
-footer .row {
-  display: flex;
-  align-items: center;
-}
-*/
-
-
-/*APPROACH 3 to centering footnote*/
-
-
-/* footer span {
-  display: block;
-  margin-top: 25px;
-} */
-
 
 /* On hover underline animation*/
 .hvr-underline-from-center {
@@ -1029,8 +965,3 @@ footer .row {
 .rubberBand {
   animation-duration: 0.3s !important;
 }
-
-/*
-http://codepen.io/aniketpant/pen/DsEve?editors=1100
-https://codepen.io/chrisota/pen/pwgAe
-*/
