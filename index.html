@@ -53,28 +53,36 @@
 
         $(document).ready(function(){
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
+  $(".scrollAnchor").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // For mobile
       if($(window).innerWidth() <= 765) {
               $('input[type=checkbox]').trigger('click');
         }
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
         // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  // For home button and hire-me btn
+  $(".scrollAnchor2").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
         window.location.hash = hash;
       });
     } // End if
@@ -113,7 +121,7 @@
         <div class="container">
 
             <div class="navbar-header">
-                <a class="navbar-brand" href="#home-section">
+                <a class="navbar-brand scrollAnchor2" href="#home-section">
                     <img class="hvr-wobble-to-bottom-right" src="img/logos/smooth_green.png" alt="" />
                 </a>
 
@@ -134,10 +142,10 @@
             <!-- For mobile -->
             <div class="collapse navbar-collapse" id="navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="nav-sec hvr-underline-from-center" href="#home-section">Home</a></li>
-                    <li><a class="nav-sec hvr-underline-from-center" href="#about-section">About</a></li>
-                    <li><a class="nav-sec hvr-underline-from-center" href="#portfolio-section">Projects</a></li>
-                    <li><a class="nav-sec hvr-underline-from-center" href="#contact-section">Contact</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center scrollAnchor" href="#home-section">Home</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center scrollAnchor" href="#about-section">About</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center scrollAnchor" href="#portfolio-section">Projects</a></li>
+                    <li><a class="nav-sec hvr-underline-from-center scrollAnchor" href="#contact-section">Contact</a></li>
                 </ul>
             </div>
 
@@ -189,7 +197,7 @@
 
 
                 <div class="col-lg-12 text-center hire-btn">
-                  <a href="#contact-section">
+                  <a class="scrollAnchor2" href="#contact-section">
                       <button type="submit" class="btn btn-xl animate-btn">Hire Me!</button>
                   </a>
                 </div>
@@ -516,7 +524,6 @@
                 $logo.addClass('animated');
                 $logo.addClass('rubberBand');
                 $logo.removeClass('hvr-wobble-to-bottom-right');
-                // $logo.addClass('hvr-push');  IN DEBATE!
             } else {
                 $nav.removeClass('show');
                 $navHead.removeClass('show');
