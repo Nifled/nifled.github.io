@@ -1,9 +1,7 @@
 @font-face {
   font-family: 'Delicious-Bold';
   src: url('../fonts/Delicious-Bold.otf') format('opentype');
-  /*    This could also be Reef, but i like delicous more :c    */
 }
-
 
 body {
     padding: 0px;
@@ -12,11 +10,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
-
-/* Preloader */
 #preloader {
     position:fixed;
     top:0;
@@ -41,9 +34,6 @@ body {
   }
 }
 
-
-
-
 .section-heading {
     font-family: 'Days One', sans-serif;
     font-size: 5vh;
@@ -66,12 +56,10 @@ body {
     margin-bottom: 0;
     min-height: 50px;
     border: 0 !important;
-    /*1px solid white !important*/
 }
 .navbar.show, .navbar-default.show {
     background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
-    border: 0 !important;
 }
 
 .nav li {
@@ -113,12 +101,6 @@ body {
     background-color: transparent !important;
 }
 
-/*.navbar-inverse .navbar-nav li a:hover {
-    background-color: #444444;
-    transition: 0.7s all linear;
-    height: 100%;
-}*/
-
 .nav-sec {
     transition: all ease 0.9s;
 }
@@ -126,10 +108,6 @@ body {
 @media only screen and (max-width: 768px) {
   .nav-sec {
       transition: all ease 0.9s;
-  }
-
-  .nav-sec:hover {
-    /*box-shadow: inset 100vw 0 0 0 #E0E0E0 !important;*/
   }
 }
 
@@ -152,11 +130,6 @@ body {
 #toggle {
     display: none;
 }
-
-
-/**
-  Hamburger
-**/
 
 .hamburger {
     width: 2em;
@@ -290,7 +263,6 @@ video {
     width: 45%;
     line-height: 1.3;
     font-family: 'Roboto', sans-serif;
-    /*font-weight: bold;*/
     font-size: 1.3em;
     color: white;
 }
@@ -368,27 +340,6 @@ video {
     border-style: solid;
     margin-bottom: 20px;
 }
-hr {
-    margin-top: -5px;
-    margin-bottom: 19px;
-    border-width: 3px;
-    clear: both;
-    display: block;
-    width: 10%;
-    background-color: #F3FBF1;
-    height: 2px;
-    text-align: center;
-}
-
-
-/* hr:after {
-  content: '\0026AB';
-  position: relative;
-  top: -16px;
-  padding: 0 10px;
-  color: white;
-  font-size: 23px;
-} */
 
 #content {
     width: 100%;
@@ -470,9 +421,6 @@ hr {
     height: auto;
     float: left;
 }
-
-
-/* Pic of me: http://i66.tinypic.com/24v1mif.jpg */
 
 .aboutme-img {
     margin: 0 10% 0 10%;
@@ -694,12 +642,9 @@ p.tabby {
     }
 }
 
-
-
 .quote {
     height: 400px;
     overflow: hidden;
-    /* Parallax */
     background-image: url('../img/quote.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -757,7 +702,6 @@ footer {
     margin-top: -150px;
     width: 100%;
     height: 150px;
-    /*padding: 10px 0;*/
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -843,80 +787,28 @@ footer span a:hover {
   right: 0;
 }
 
-
-@-webkit-keyframes hvr-push {
-  50% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes hvr-push {
-  50% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-.hvr-push {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
-.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
-  -webkit-animation-name: hvr-push;
-  animation-name: hvr-push;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-
 /* Wobble To Bottom Right */
 @-webkit-keyframes hvr-wobble-to-bottom-right {
   16.65% {
     -webkit-transform: translate(8px, 8px);
     transform: translate(8px, 8px);
   }
-
   33.3% {
     -webkit-transform: translate(-6px, -6px);
     transform: translate(-6px, -6px);
   }
-
   49.95% {
     -webkit-transform: translate(4px, 4px);
     transform: translate(4px, 4px);
   }
-
   66.6% {
     -webkit-transform: translate(-2px, -2px);
     transform: translate(-2px, -2px);
   }
-
   83.25% {
     -webkit-transform: translate(1px, 1px);
     transform: translate(1px, 1px);
   }
-
   100% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -928,27 +820,22 @@ footer span a:hover {
     -webkit-transform: translate(8px, 8px);
     transform: translate(8px, 8px);
   }
-
   33.3% {
     -webkit-transform: translate(-6px, -6px);
     transform: translate(-6px, -6px);
   }
-
   49.95% {
     -webkit-transform: translate(4px, 4px);
     transform: translate(4px, 4px);
   }
-
   66.6% {
     -webkit-transform: translate(-2px, -2px);
     transform: translate(-2px, -2px);
   }
-
   83.25% {
     -webkit-transform: translate(1px, 1px);
     transform: translate(1px, 1px);
   }
-
   100% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -975,7 +862,7 @@ footer span a:hover {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-
+/* already made with Animate.css */
 .rubberBand {
   animation-duration: 0.3s !important;
 }
