@@ -4,6 +4,7 @@
 }
 
 body {
+    height: 100%;
     padding: 0px;
     margin: 0px;
 
@@ -541,10 +542,16 @@ p.tabby {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
-    min-height: 105vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
+@media only screen and (max-width : 480px) {
+    .contact {
+      min-height: 630px;
+    }
+}
+
 
 .container.inform {
     width: 40%;
@@ -619,7 +626,7 @@ p.tabby {
     margin-top: 4em;
   }
   .form-group input, .form-group textarea {
-      padding: 10px;
+      padding: 12px;
   }
   .contact {
       display: block !important;
@@ -639,6 +646,9 @@ p.tabby {
   }
   form {
     margin-top: 30px;
+  }
+  .form-group input, .form-group textarea {
+      padding: 12px;
   }
   .container.inform {
       width: 85%;
