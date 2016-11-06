@@ -160,7 +160,7 @@ body {
 
 #toggle:checked+.hamburger .meat {
     transform: rotate(45deg);
-    margin-top: -3px;
+    margin-top: -4px;
 }
 
 #toggle:checked+.hamburger+.nav {
@@ -386,6 +386,11 @@ video {
     margin-top: 50px;
     width: 200px;
 }
+@media only screen and (max-width: 768px) {
+  .img {
+      width: 150px;
+  }
+}
 
 .aboutme-heading {
     margin-top: 150px;
@@ -547,6 +552,7 @@ p.tabby {
 
 .form-group {
     font-family: 'Ubuntu', sans-serif;
+    overflow: auto;
 }
 
 .form-control {
@@ -611,6 +617,9 @@ p.tabby {
   }
   form {
     margin-top: 4em;
+  }
+  .form-group input, .form-group textarea {
+      padding: 10px;
   }
   .contact {
       display: block !important;
