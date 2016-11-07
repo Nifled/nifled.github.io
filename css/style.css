@@ -3,6 +3,25 @@
   src: url('../fonts/Delicious-Bold.otf') format('opentype');
 }
 
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(0, 230, 118, 1);
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 230, 118, 0.6);
+}
+
 body {
     height: 100%;
     padding: 0px;
@@ -50,7 +69,6 @@ body {
 .navbar-collapse {
   border: 0 !important;
 }
-
 .navbar, .navbar-default {
     background-color: transparent;
     /*rgba(0, 0, 0, 0.4)*/
@@ -62,14 +80,12 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
 }
-
 .nav li {
     display: inline;
     color: white;
     text-align: center !important;
     transition: 1s ease;
 }
-
 .navbar-brand img {
   transition: all 1s ease;
     width: 100px;
@@ -92,7 +108,6 @@ body {
       margin-bottom: 5px !important;
     }
 }
-
 .navbar-default .navbar-nav>li>a {
     color: white;
     font-size: 1.7em;
@@ -101,22 +116,18 @@ body {
     font-family: 'Asap', sans-serif;
     background-color: transparent !important;
 }
-
 .nav-sec {
     transition: all ease 0.9s;
 }
-
 @media only screen and (max-width: 768px) {
   .nav-sec {
       transition: all ease 0.9s;
   }
 }
-
 .nav-sec:hover {
     text-shadow: none !important;
     color: white !important;
 }
-
 .booty {
     background-color: transparent;
     border: transparent !important;
@@ -138,7 +149,6 @@ body {
     margin-top: -10px;
     z-index: 5;
 }
-
 .hamburger div {
     position: relative;
     width: 2em;
@@ -148,22 +158,18 @@ body {
     margin-top: 7px;
     transition: all 0.3s ease-in-out;
 }
-
 #toggle:checked+.hamburger .top-bun {
     transform: rotate(-45deg);
     margin-top: 20px;
 }
-
 #toggle:checked+.hamburger .bottom-bun {
     opacity: 0;
     transform: rotate(45deg);
 }
-
 #toggle:checked+.hamburger .meat {
     transform: rotate(45deg);
     margin-top: -4px;
 }
-
 #toggle:checked+.hamburger+.nav {
     top: 0;
     transform: scale(1);
@@ -187,37 +193,30 @@ video {
 #header {
     margin-bottom: 50px;
 }
-
 #header span {
     display: inline-block;
     margin-top: 0;
     font-family: 'Delicious-Bold';
-    /*font-family: 'Gochi Hand', cursive;*/
     font-size: 3.3em;
     color: white;
 }
-
 @media only screen and (max-width: 992px) {
   #header span {
     font-size: 3em !important;
   }
-
   #sub-head span {
     font-size: 1.3em !important;
   }
 }
-
 @media only screen and (max-width: 768px) {
   #header span {
     font-size: 2.6em !important;
   }
-
   #sub-head span {
     font-size: 1.4em !important;
     width: 50% !important;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .erickHead {
     margin-bottom: 20px !important;
@@ -225,40 +224,33 @@ video {
   #header span {
     font-size: 2.4em !important;
   }
-
   #sub-head span {
     font-size: 1.2em !important;
     width: 58% !important;
   }
-
   .hire-btn button {
     font-size: 105% !important;
     width: 175px !important;
   }
 }
-
 @media only screen and (max-width: 500px) {
   #header span {
     font-size: 2em !important;
   }
-
   #sub-head span {
     font-size: 1em !important;
     width: 65% !important;
   }
 }
-
 @media only screen and (max-width: 385px) {
   #header span {
     font-size: 1.8em !important;
   }
-
   #sub-head span {
     font-size: 1em !important;
     width: 70% !important;
   }
 }
-
 #sub-head span {
     margin: 0 auto;
     width: 45%;
@@ -267,7 +259,6 @@ video {
     font-size: 1.3em;
     color: white;
 }
-
 .hire-btn button {
     position: relative;
     font-size: 115%;
@@ -333,14 +324,6 @@ video {
     align-items: center;
     position: fixed;
 }
-.banner-image {
-    width: 250px;
-    border-color: white;
-    border-radius: 50%;
-    border-width: 2px;
-    border-style: solid;
-    margin-bottom: 20px;
-}
 
 #content {
     width: 100%;
@@ -354,7 +337,6 @@ video {
     margin-top: 150px;
     margin-bottom: 100px;
 }
-
 .tools {
     padding-bottom: 150px;
     padding-right: 150px;
@@ -376,13 +358,11 @@ video {
     padding-bottom: 70px;
   }
 }
-
 .tool-item {
   animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -webkit-animation-delay: 0.1s;
 }
-
 .img {
     margin-top: 50px;
     width: 200px;
@@ -397,7 +377,6 @@ video {
     margin-top: 150px;
     margin-bottom: 100px;
 }
-
 .aboutme {
     padding-bottom: 150px;
     background-color: rgba(245, 255, 245, 1);
@@ -411,7 +390,6 @@ video {
       padding-bottom: 70px;
   }
 }
-
 .aboutme-content {
     display: flex;
     align-items: center;
@@ -420,14 +398,12 @@ video {
     width: 100%;
     margin: 0 0 15px;
 }
-
 .aboutme-element {
     display: block;
     max-width: 100%;
     height: auto;
     float: left;
 }
-
 .aboutme-img {
     margin: 0 10% 0 10%;
     border-radius: 50%;
@@ -436,17 +412,14 @@ video {
     -webkit-filter: grayscale(1);
     transition: all 0.7s ease;
 }
-
 .colorize {
   filter: none !important;
 }
-
 .aboutme-text {
     margin: 0 10% 0 0;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
 }
-
 @media only screen and (max-width: 768px) {
     .aboutme-element {
         width: 100%;
@@ -463,13 +436,11 @@ video {
         padding: 0 10%;
     }
 }
-
 @media only screen and (min-width: 500px) {
     .aboutme-img {
         width: 350px;
     }
 }
-
 p.tabby {
     text-indent: 3em;
 }
@@ -477,12 +448,10 @@ p.tabby {
 .portfolio {
     background: rgba(245, 255, 245, 1);
 }
-
 .portfolio-heading {
     margin-top: 150px;
     margin-bottom: 100px;
 }
-
 .portfolio-grid {
     padding-bottom: 150px;
 }
@@ -495,7 +464,6 @@ p.tabby {
       padding-bottom: 100px;
   }
 }
-
 .portfolio-item {
     padding: 15px;
     margin: 0px 0 20px 0px;
@@ -506,11 +474,9 @@ p.tabby {
     -moz-animation-delay: 0.1s;
     -webkit-animation-delay: 0.1s;
 }
-
 .portfolio-item:hover {
     opacity: 1;
 }
-
 @media only screen and (max-width: 768px) {
     .portfolio-item {
         float: none;
@@ -518,7 +484,6 @@ p.tabby {
         width: 75%;
     }
 }
-
 .portfolio-item img {
     border-radius: 2%;
 }
@@ -526,15 +491,12 @@ p.tabby {
 .contact-heading h2 {
     color: white;
 }
-
 .contact-heading h3 {
     color: white;
 }
-
 .contact-heading {
     bottom: 10vh;
 }
-
 .contact {
     background-image: url('../img/desk2.jpg');
     background-attachment: fixed;
@@ -551,35 +513,27 @@ p.tabby {
       min-height: 630px;
     }
 }
-
-
 .container.inform {
     width: 40%;
 }
-
 .form-group {
     font-family: 'Ubuntu', sans-serif;
     overflow: auto;
 }
-
 .form-control {
     transition: .5s border-color;
 }
-
 .form-control:focus {
     box-shadow: inset 0 0 5px rgba(0, 230, 118, 1);
     border-color: rgba(0, 230, 118, 1);
 }
-
 .form-group input, .form-group textarea {
     height: auto;
     padding: 20px;
 }
-
 ::-webkit-input-placeholder {
     font-size: 16px;
 }
-
 .submit-btn button {
     position: relative;
     font-size: 115%;
@@ -595,19 +549,16 @@ p.tabby {
 
     margin-bottom: 30px;
 }
-
 .submit-btn button:hover {
     background-color: rgba(0, 230, 118, 1) /*#64FFDA*/;
     transition: 1s background-color;
     color: white;
 }
-
 @media screen and (max-width: 995px) , screen and (max-height: 700px) {
   .submit-btn button {
       margin-bottom: 70px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .container.inform {
       width: 60%;
@@ -616,7 +567,6 @@ p.tabby {
         width: 180px;
     }
 }
-
 @media only screen and (max-width: 480px) {
   .contact-heading {
       bottom: 10px;
@@ -638,7 +588,6 @@ p.tabby {
         width: 150px;
     }
 }
-
 @media only screen and (max-width: 360px) {
   .contact-heading {
       bottom: 10px;
@@ -673,7 +622,6 @@ p.tabby {
     flex-direction: column;
     justify-content: center;
 }
-
 blockquote {
   width: 80%;
     font-family: 'Droid Serif', serif;
@@ -684,24 +632,19 @@ blockquote {
     position: relative;
     font-size: 2em;
 }
-
 blockquote cite {
     color: white;
     font-size: 0.6em;
 }
-
 .fa-quote-left {
     margin-left: -25px;
 }
-
 .fa-quote-right {
     margin-right: -25px;
 }
-
 blockquote cite:before {
     content: "\2014 \2009";
 }
-
 @media only screen and (max-width: 650px) {
   blockquote {
     width: 90%;
@@ -711,7 +654,6 @@ blockquote cite:before {
       position: relative;
       font-size: 2em;
   }
-
   blockquote cite {
       font-size: 0.5em;
   }
@@ -723,11 +665,9 @@ footer {
     height: 150px;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
 footer .row {
     margin-top: 33px !important;
 }
-
 @media only screen and (max-width: 480px) {
   footer {
     margin-top: -120px;
@@ -746,14 +686,12 @@ footer .row {
       margin-top: 10px !important;
   }
 }
-
 .social {
     color: white;
     font-size: 40px;
     padding: 15px;
     transition: .5s ease;
 }
-
 footer .social:hover {
     color: rgba(0, 230, 118, 1);
     transition: 0.3s ease;
@@ -764,7 +702,6 @@ footer span {
     font-size: 0.8em;
     font-weight: 500;
 }
-
 footer span a {
     color: inherit;
 }
