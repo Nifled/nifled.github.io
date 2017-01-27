@@ -1,28 +1,51 @@
-// blurred image background !!!!!!!!
+if ($(window).width() <= 768) {
+  var videoElement = document.getElementById('wrapper');
+  videoElement.pause();
+  videoElement.src =""; // empty source
+  videoElement.load();
+} else {
+  var videoElement = document.getElementById('wrapper');
+  videoElement.pause();
+  videoElement.src ="vids/header.mp4";
+  videoElement.load();
+}
+
+  $('.booty').click(function() {
+      $('input[type=checkbox]').trigger('click');
+  });
+  $('.hamburger').click(function() {
+      $('input[type=checkbox]').trigger('click');
+  });
 
 
 
-// Alternative color for div backgrounds: light blue #A7FFEB, material green: #64FFDA
+  var $nav = $('.navbar');
+  var $navHead = $('.navbar-default');
+  var $logo = $('.navbar-brand img')
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > $(window).height() - $logo.height()) {
+          $nav.addClass('show');
+          $navHead.addClass('show');
+          $logo.addClass('smallLogo');
+          $logo.addClass('animated');
+          $logo.addClass('rubberBand');
+          $logo.removeClass('hvr-wobble-to-bottom-right');
+      } else {
+          $nav.removeClass('show');
+          $navHead.removeClass('show');
+          $logo.removeClass('smallLogo');
+          $logo.removeClass('animated');
+          $logo.removeClass('rubberBand');
+          $logo.addClass('hvr-wobble-to-bottom-right');
+      }
 
-//  http://www.wideeyecreative.com/
+      //aboutme-img
+      var aboutImage = $(".aboutme-img").offset().top;
+      var scrollY = $(window).scrollTop();
+      if (scrollY + scrollY/1.1 > aboutImage) {
+        $(".aboutme-img").addClass('colorize');
+      }
 
-
-//  FOOTER GO UPPP!!!
-
-
-
-
-
-//  TODO:
-//  https://github.com/matthieua/WOW
-//  https://github.com/matthieua/WOW
-//  http://www.webalys.com/
-
-
-//***  Navbar hamburger (made it with animation)
-//  Make and place a FOOTER TO FORGET ABOUT THE FORM SHENANIGANS
-//  Finish up the project section, maybe a hover function, tweak up the bootsrap grids
-//  Fix text sizing in blockquote
-//  Fix pic sizing in SKILLS (looks to big when scaled down)
-//  when resizing, navbar goes over the banner page & pic
-//  For the projects, use images 1080 x 720, looks better
+  });on("resize", function() { // If the user resizes the window
+      $(window).height() = $(this).height(); // the new height value
+  });
