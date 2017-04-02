@@ -338,10 +338,44 @@ video {
     padding-bottom: 70px;
   }
 }
+@media only screen and (min-width : 1024px) {
+    .tool-col {
+        border-right: 1px solid black;
+    }
+    .tool-col:last-child {
+        border-right: none;
+    }
+}
+.tool-header {
+    margin: 20px 0 20px 0;
+}
+@media only screen and (max-width : 768px) {
+    .tool-header {
+        margin: 60px 0 20px 0;
+    }
+}
+.tool-header span {
+    font-size: 3em;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+.tool-header span:nth-child(1) {
+    color: rgba(0, 230, 118, 1);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.tool-header span:nth-child(2) {
+    color: rgb(0, 0, 0);
+}
 .tool-item {
   animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -webkit-animation-delay: 0.1s;
+}
+.thumb-caption i {
+    font-size: 5em;
+    display: inline-block;
+    margin-top: 25px;
 }
 .img {
     margin-top: 50px;
