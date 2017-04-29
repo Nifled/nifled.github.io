@@ -23,6 +23,13 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 });
 
 $(document).ready(function(){
+
+    // scrollspy
+    $("body").scrollspy({
+        target: "#myNavbar",
+        offset: 80
+    });
+
     // Add smooth scrolling to all links
     $(".scrollAnchor").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior

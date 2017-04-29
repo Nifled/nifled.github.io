@@ -1,10 +1,9 @@
+var videoElement = document.getElementById('wrapper');
 if ($(window).width() <= 768) {
-  var videoElement = document.getElementById('wrapper');
   videoElement.pause();
   videoElement.src =""; // empty source
   videoElement.load();
 } else {
-  var videoElement = document.getElementById('wrapper');
   videoElement.pause();
   videoElement.src ="vids/header.mp4";
   videoElement.load();
