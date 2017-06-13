@@ -68,7 +68,6 @@ body {
 }
 li.active a {
     color: rgba(0, 230, 118, 1) !important;
-    transition: None;
 }
 .navbar-brand img {
   transition: all 1s ease;
@@ -99,9 +98,6 @@ li.active a {
     margin: 5px;
     font-family: 'Asap', sans-serif;
     background-color: transparent !important;
-}
-.nav-sec {
-    transition: all ease 0.9s;
 }
 @media only screen and (max-width: 768px) {
   .nav-sec {
