@@ -99,6 +99,12 @@ li.active a {
     font-family: 'Asap', sans-serif;
     background-color: transparent !important;
 }
+.navbar-nav > li > a:focus {
+    color: white !important;
+}
+.navbar-nav > li.active > a:focus {
+    color: rgba(0, 230, 118, 1) !important;
+}
 .navbar-default .navbar-nav > li > .resume {
     color: white !important;
 }
