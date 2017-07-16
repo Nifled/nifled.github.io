@@ -1,2 +1,11 @@
-# Jetbrains config
-.idea/
+# Django
+migrations
+
+# Virtual Environment
+venv
+*.pyc
+staticfiles
+.env
+
+# PyCharm
+.idea
