@@ -1,5 +1,5 @@
 """
-Django settings for blog project.
+Django settings for website project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.10/topics/settings/
@@ -46,6 +46,12 @@ INSTALLED_APPS = [
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+
+    # 3rd party apps
+
+    # Project apps
+    'mysite.apps.home',
+    'mysite.apps.blog',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +65,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'blog.urls'
+ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +84,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'blog.wsgi.application'
+WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
 # Database
