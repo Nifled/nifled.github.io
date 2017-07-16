@@ -1,5 +1,6 @@
 # Django
 migrations
+db.sqlite3
 
 # Virtual Environment
 venv
