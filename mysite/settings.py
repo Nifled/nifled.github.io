@@ -48,10 +48,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # 3rd party apps
+    'markdown_deux',
 
     # Project apps
+    'mysite.apps.blog.apps.BlogConfig',
     'mysite.apps.home',
-    'mysite.apps.blog',
 ]
 
 MIDDLEWARE = [
