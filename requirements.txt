@@ -1,6 +1,7 @@
 dj-database-url==0.4.1
 Django==1.11.1
 django-markdown-deux==1.0.5
+djangorestframework==3.6.3
 gunicorn==19.6.0
 markdown2==2.3.4
 python-decouple==3.0
