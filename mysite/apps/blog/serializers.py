@@ -19,6 +19,7 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
         model = Post
         fields = (
             'body',
+            'created_at',
             'description',
             'read_time',
             'slug',
@@ -47,3 +48,14 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
 
     def get_updated_at(self, instance):
         return instance.updated_at.isoformat()
+
+
+class TagSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tag
+        fields = ('tag',)
+
+    # On Responses, we only want the Tag objects to show
+    # the name field (see Tag model) as strings, in an array
+    def to_representation(self, obj):
+        return obj.name
