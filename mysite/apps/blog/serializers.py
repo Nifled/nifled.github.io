@@ -12,8 +12,8 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
     # response. So we can retrieve them as an array.
     tagList = serializers.StringRelatedField(many=True, required=False, source='tags')
 
-    created_at = serializers.SerializerMethodField(method_name='get_created_at')
-    updated_at = serializers.SerializerMethodField(method_name='get_updated_at')
+    created_at = serializers.SerializerMethodField()
+    updated_at = serializers.SerializerMethodField()
 
     class Meta:
         model = Post
@@ -25,8 +25,18 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
             'slug',
             'tagList',
             'title',
+            'updated_at',
             'url',
         )
+        # \
+        #  Lookup field required defined attributes for HyperlinkedModelSerializer
+        #  (since I'm using a slug to lookup Posts (/posts/dragons-are-cool)
+        #  instead of ID (/posts/id).
+        # /
+        lookup_field = 'slug'
+        extra_kwargs = {
+            'url': {'lookup_field': 'slug'}
+        }
 
     def create(self, validated_data):
         """Create tags dynamically along with other validated data."""
