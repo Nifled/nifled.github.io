@@ -5,7 +5,8 @@ from markdown_deux import markdown
 
 class Post(models.Model):
     slug = models.SlugField(db_index=True, unique=True, max_length=255, editable=False)  # Hide from admin
-    title = models.TextField(db_index=True, max_length=255,)
+    title = models.CharField(db_index=True, max_length=255,)
+    description = models.TextField()
     body = models.TextField()
     read_time = models.PositiveSmallIntegerField(editable=False)  # Hide from admin
 
