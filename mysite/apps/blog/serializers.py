@@ -1,16 +1,17 @@
 from rest_framework import serializers
 
 from .models import Post, Tag
+from .relations import TagRelatedField
 
 
 class PostSerializer(serializers.HyperlinkedModelSerializer):
 
-    slug = serializers.SlugField(required=False)
+    slug = serializers.SlugField(required=False, allow_blank=True)
     description = serializers.CharField(required=False)
 
     # Show the list of tags' __str__ string in our JSON
     # response. So we can retrieve them as an array.
-    tagList = serializers.StringRelatedField(many=True, required=False, source='tags')
+    tagList = TagRelatedField(many=True, required=False, source='tags')
 
     created_at = serializers.SerializerMethodField()
     updated_at = serializers.SerializerMethodField()
