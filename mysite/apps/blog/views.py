@@ -28,7 +28,7 @@ class PostViewSet(mixins.CreateModelMixin,
         # TODO : Make filtering support multiple tags in query parameters
         tag = self.request.query_params.get('tag', None)
         if tag is not None:
-            queryset = queryset.filter(tags__tag=tag)
+            queryset = queryset.filter(tags__name=tag)
 
         return queryset
 
