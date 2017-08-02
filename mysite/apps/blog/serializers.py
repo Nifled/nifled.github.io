@@ -64,7 +64,7 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tag
-        fields = ('tag',)
+        fields = ('name',)
 
     # On Responses, we only want the Tag objects to show
     # the name field (see Tag model) as strings, in an array

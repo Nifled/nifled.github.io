@@ -1,10 +1,10 @@
-from rest_framework import mixins, status, viewsets
+from rest_framework import generics, mixins, status, viewsets
 from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 
 from .models import Post, Tag
-from .serializers import PostSerializer
+from .serializers import PostSerializer, TagSerializer
 
 
 class PostViewSet(mixins.CreateModelMixin,
@@ -15,7 +15,7 @@ class PostViewSet(mixins.CreateModelMixin,
     lookup_field = 'slug'
     queryset = Post.objects.all()
     # TODO : Add custom permission for type IsStaffOrReadOnly
-    permission_classes = (IsAuthenticatedOrReadOnly,)
+    # permission_classes = (IsAuthenticatedOrReadOnly,)  # Temporarily disabled
     serializer_class = PostSerializer
 
     def get_queryset(self):
@@ -89,5 +89,17 @@ class PostViewSet(mixins.CreateModelMixin,
         )
         serializer.is_valid(raise_exception=True)
         serializer.save()
+
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class TagListAPIView(generics.ListAPIView):
+    queryset = Tag.objects.all()
+    serializer_class = TagSerializer
+
+    def list(self, request):
+        """List out all the tags mentions in Blog."""
+        serializer_data = self.get_queryset()
+        serializer = self.serializer_class(serializer_data, many=True)
 
         return Response(serializer.data, status=status.HTTP_200_OK)
