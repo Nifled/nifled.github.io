@@ -53,7 +53,7 @@ INSTALLED_APPS = [
 
     # Project apps
     'mysite.apps.blog.apps.BlogConfig',
-    'mysite.apps.home',
+    'mysite.apps.authentication.apps.AuthenticationConfig',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +147,16 @@ STATICFILES_DIRS = [
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Custom User
+AUTH_USER_MODEL = 'authentication.User'
+
+# Django REST Framework settings
+REST_FRAMEWORK = {
+    # Instead of the key being `non_field_error` on the DRF Response, just let it be `error`
+    'NON_FIELD_ERRORS_KEY': 'error',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        # Custom-made authentication using our JWTAuthentication class in backends.py
+        'mysite.apps.authentication.backends.JWTAuthentication',
+    ),
+}
