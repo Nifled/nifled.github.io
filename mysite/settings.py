@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     # Project apps
     'mysite.apps.blog.apps.BlogConfig',
     'mysite.apps.authentication.apps.AuthenticationConfig',
+    'mysite.apps.projects.apps.ProjectsConfig',
 ]
 
 MIDDLEWARE = [
